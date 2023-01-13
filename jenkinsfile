@@ -14,6 +14,5 @@ pipeline {
                 git 'https://github.com/devopsintellipaat/jenkins-ansible.git'
             }
         }
-        }
     }
 }
