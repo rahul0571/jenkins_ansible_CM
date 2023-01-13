@@ -14,11 +14,6 @@ pipeline {
                 git 'https://github.com/devopsintellipaat/jenkins-ansible.git'
             }
         }
-        stage('ansible task') {
-            steps {
-                ansiblePlaybook become: true, credentialsId: 'dev', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev.inv', playbook: 'ansible-playbook.yml'
-             
-            }
         }
     }
 }
